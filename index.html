@@ -1,1 +1,59 @@
-cjcjcck
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Wine Store</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Wines</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="wine-list">
+            <article class="wine-item">
+                <img src="wine1.jpg" alt="Wine 1">
+                <h2>Wine Name 1</h2>
+                <p>Description of Wine 1.</p>
+                <p>Price: $20.00</p>
+                <button onclick="addToCart(1)">Add to Cart</button>
+            </article>
+
+            <article class="wine-item">
+                <img src="wine2.jpg" alt="Wine 2">
+                <h2>Wine Name 2</h2>
+                <p>Description of Wine 2.</p>
+                <p>Price: $25.00</p>
+                <button onclick="addToCart(2)">Add to Cart</button>
+            </article>
+
+            <!-- Add more wine items here -->
+        </section>
+
+        <aside class="shopping-cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items">
+                <!-- Cart items will be displayed here -->
+            </ul>
+            <p>Total: <span id="cart-total">$0.00</span></p>
+        </aside>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Wine Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
